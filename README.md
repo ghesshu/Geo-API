@@ -1,6 +1,6 @@
 # 🌍 GEO API Documentation
- Comprehensive Country Information Service
 
+Comprehensive Country Information Service
 
 Welcome to GEO API documentation! 🎉 This API provides endpoints to retrieve information about countries and regions from a database. You can use these endpoints to fetch data about countries, search for specific countries, manage regions, and more.
 
@@ -8,7 +8,11 @@ Welcome to GEO API documentation! 🎉 This API provides endpoints to retrieve i
 
 ## Base URL
 
-The base URL for all endpoints is: `https://your-api-base-url.com` 🚀
+The base URL for all endpoints is: `https://geo-api-xn6g.onrender.com/api` 🚀
+
+## Postman Access
+
+You can acess this API on Postman at `https://elements.getpostman.com/redirect?entityId=26503026-3513df08-9857-4dea-8f8f-7463e88b3058&entityType=collection`
 
 ## Authentication
 
@@ -39,15 +43,12 @@ This API does not require authentication for accessing the endpoints. 🛡️
 - **URL Parameters:** `value` - Unique value of the country.
 - **Response:** Details of the specified country. 📝
 
-
-
 ### Get All Countries with Capital City
 
 - **URL:** `/countries/capital`
 - **Method:** `GET`
 - **Description:** Retrieve a list of all countries with their respective capital cities.
 - **Response:** An array of country objects with name and capital city. 🌆
-
 
 ### Get Country Capital City by Value
 
@@ -57,15 +58,12 @@ This API does not require authentication for accessing the endpoints. 🛡️
 - **URL Parameters:** `value` - Unique value of the country.
 - **Response:** Capital city of the specified country. 🏙️
 
-
 ### Get All Countries with Currency
 
 - **URL:** `/countries/currency`
 - **Method:** `GET`
 - **Description:** Retrieve a list of all countries with their respective currencies.
 - **Response:** An array of country objects with name and currency details. 💱
-
-
 
 ### Get Country Currency by Value
 
@@ -75,15 +73,12 @@ This API does not require authentication for accessing the endpoints. 🛡️
 - **URL Parameters:** `value` - Unique value of the country.
 - **Response:** Currency details of the specified country. 💰
 
-
-
 ### Get All Countries with Languages
 
 - **URL:** `/countries/languages`
 - **Method:** `GET`
 - **Description:** Retrieve a list of all countries with their respective languages.
 - **Response:** An array of country objects with name and languages spoken. 🌐
-
 
 ### Get Country Languages by Value
 
@@ -92,8 +87,6 @@ This API does not require authentication for accessing the endpoints. 🛡️
 - **Description:** Retrieve the languages spoken in a country by its unique value.
 - **URL Parameters:** `value` - Unique value of the country.
 - **Response:** Languages spoken in the specified country. 🗣️
-
-
 
 ### Get All Countries with Telephone Codes
 
@@ -125,7 +118,6 @@ This API does not require authentication for accessing the endpoints. 🛡️
 - **URL Parameters:** `value` - Unique value of the country.
 - **Response:** Population of the specified country. 📊
 
-
 ## Region Endpoints
 
 ### Get All Regions
@@ -135,8 +127,6 @@ This API does not require authentication for accessing the endpoints. 🛡️
 - **Description:** Retrieve a list of all regions with their names and values.
 - **Response:** An array of region objects containing name and value. 🌍
 
-
-
 ### Get Region by Value
 
 - **URL:** `/regions/:value`
@@ -145,7 +135,8 @@ This API does not require authentication for accessing the endpoints. 🛡️
 - **URL Parameters:** `value` - Unique value of the region.
 - **Response:** Details of the specified region. 📝
 
+## Contributions Welcome! 🌟
 
-
+I welcome contributions to improve and expand this API documentation. If you have suggestions, feature requests, or would like to report issues, feel free to open an issue or submit a pull request on my [GitHub repository](https://github.com/ghesshu/Geo-API)!
 
 ---
