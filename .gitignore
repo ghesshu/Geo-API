@@ -129,4 +129,5 @@ dist
 
 # Mine
 countries/
+data/
 .dummy.ts
