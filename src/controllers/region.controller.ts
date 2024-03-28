@@ -14,7 +14,7 @@ export const getAllRegions = async (req: Request, res: Response) => {
     const regions = await Region.find({}, { _id: 0, name: 1, value: 1 });
 
     // Extract name and value fields from each region document
-    const sanitizedRegions = regions.map((region) => ({
+    const sanitizedRegions = regions.map((region: any) => ({
       name: region.name,
       value: region.value,
     }));
@@ -63,7 +63,7 @@ export const getRegionByValue = async (req: Request, res: Response) => {
     );
 
     // Extract name and value of each country
-    const countryDetails = countries.map((country) => ({
+    const countryDetails = countries.map((country: any) => ({
       name: country.name,
       value: country.value,
     }));

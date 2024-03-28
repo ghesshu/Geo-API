@@ -2,7 +2,7 @@
   "name": "geo-api",
   "version": "1.0.0",
   "description": "Comprehensive Country Information Service",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "nodemon"
   },
