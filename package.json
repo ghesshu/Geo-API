@@ -4,7 +4,9 @@
   "description": "Comprehensive Country Information Service",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "",
