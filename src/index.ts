@@ -12,7 +12,7 @@ const app: Express = express();
 app.use(express.json());
 const port = process.env.PORT || 3000;
 
-app.get("/api", (req: Request, res: Response) => {
+app.get("/", (req: Request, res: Response) => {
   res.send("Express + TypeScript Server");
 });
 

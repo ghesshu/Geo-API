@@ -131,3 +131,5 @@ dist
 countries/
 data/
 .dummy.ts
+dockerfile
+docker-compose.yml
