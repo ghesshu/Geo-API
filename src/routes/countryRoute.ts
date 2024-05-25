@@ -15,6 +15,7 @@ import {
   getAllCountriesTel,
   getAllCountriesPopulation,
   searchThroughCountries,
+  getCounteyB,
 } from "../controllers/country.controller";
 
 const router = express.Router();
@@ -37,4 +38,6 @@ router.get("/countries/currency", getAllCountriesCurrency); // Route to get all 
 router.get("/countries/languages", getAllCountriesLang); // Route to get all countries with languages
 router.get("/countries/telephone", getAllCountriesTel); // Route to get all countries with telephone codes
 
+//////////////
+router.get("/country/all", getCounteyB);
 export default router;

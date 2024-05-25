@@ -298,3 +298,22 @@ export const searchThroughCountries = async (req: Request, res: Response) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
+
+export const getCounteyB = async (req: Request, res: Response) => {
+  try {
+    // Query all countries from the database, projecting only the required fields
+    const countries = await Country.find(
+      {},
+      { _id: 0, name: 1, capital: 1, telephone_code: 1, value: 1 }
+    );
+
+    // Return the result as a JSON response
+    return res.json(countries);
+  } catch (error) {
+    // Handle any errors that occur during the query
+    return handleError(
+      res,
+      "Could not fetch countries with their cities and telephone codes"
+    );
+  }
+};
